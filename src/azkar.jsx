@@ -32,7 +32,7 @@ function Azkar() {
   };
 
   const handleReset = (e, index) => {
-    e.stopPropagation(); // prevent triggering decrement
+    e.stopPropagation();
     setAzkar((prevAzkar) =>
       prevAzkar.map((card, i) =>
         i === index ? { ...card, remaining: card.initialRemaining } : card
